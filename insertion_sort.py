@@ -1,13 +1,13 @@
 def insertion_sort_desc(arr):
     """
-    Perform an insertion sort to sort the array in descending order.
-    :param arr: List of numbers to be sorted
+    Performing an insertion sort to sort the array in descending order.
+    :param arr: Listing of numbers to be sorted
     :return: Sorted list in descending order
     """
     for i in range(1, len(arr)):
         key = arr[i] #Element to be positioned
-        j = i - 1    #Index of the previous element
-        # Move elements smaller than key to the right
+        j = i - 1    #Indexing of the previous element
+        # Moving elements smaller than key to the right
         while j >= 0 and arr[j] < key:
             arr[j + 1] = arr[j]
             j -= 1
@@ -16,14 +16,14 @@ def insertion_sort_desc(arr):
     return arr
 def insertion_sort_desc(arr):
     """
-    Perform an insertion sort to sort the array in descending order.
-    :param arr: List of numbers to be sorted
+    Performing an insertion sort to sort the array in descending order.
+    :param arr: Listing of numbers to be sorted
     :return: Sorted list in descending order
     """
     for i in range(1, len(arr)):
         key = arr[i]
         j = i - 1
-        # Move elements smaller than key to the right
+        # Moving the elements smaller than key to the right
         while j >= 0 and arr[j] < key:
             arr[j + 1] = arr[j]
             j -= 1
@@ -34,14 +34,14 @@ def main():
     """
     Main function to take user input, sort the array, and print the result.
     """
-    # Prompt the user to enter numbers separated by spaces
+    # Prompting the user to enter numbers separated by spaces
     arr = [int(x) for x in input("Enter numbers separated by spaces: ").split()]
-    # Sort the array in descending order
+    # Sorting the array in descending order
     sorted_arr = insertion_sort_desc(arr)
-    # Print the sorted array
+    # Printing the sorted array
     print("Sorted array in descending order:", sorted_arr)
 
 if __name__ == "__main__":
-    # Execute the main function if the script is run directly
+    # Executing the main function if the script is run directly
     main()
 
