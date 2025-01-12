@@ -5,12 +5,13 @@ def insertion_sort_desc(arr):
     :return: Sorted list in descending order
     """
     for i in range(1, len(arr)):
-        key = arr[i]
-        j = i - 1
+        key = arr[i] #Element to be positioned
+        j = i - 1    #Index of the previous element
         # Move elements smaller than key to the right
         while j >= 0 and arr[j] < key:
             arr[j + 1] = arr[j]
             j -= 1
+           #Placing the key in its correct postion 
         arr[j + 1] = key
     return arr
 def insertion_sort_desc(arr):
